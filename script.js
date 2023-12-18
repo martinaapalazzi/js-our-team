@@ -15,48 +15,59 @@ const employers = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        image: 'wayne-barnett-founder-ceo.jpg',
+        //image: 'wayne-barnett-founder-ceo.jpg',
     },
 
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg',
+        //image: 'angela-caroll-chief-editor.jpg',
     },
 
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
-        image: 'walter-gordon-office-manager.jpg',
+        //image: 'walter-gordon-office-manager.jpg',
     },
 
     {
         name: 'Angela Lopez',
         role: 'Social Media Manager',
-        image: 'angela-lopez-social-media-manager.jpg',
+        //image: 'angela-lopez-social-media-manager.jpg',
     },
 
     {
         name: 'Scott Estrada',
         role: 'Developer',
-        image: 'scott-estrada-developer.jpg',
+        //image: 'scott-estrada-developer.jpg',
     },
     
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg',
+        //image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
 
-console.log('emplyers', employers, typeof employers);
+
+const imgList = [
+    'wayne-barnett-founder-ceo.jpg',
+    'angela-caroll-chief-editor.jpg',
+    'walter-gordon-office-manager.jpg',
+    'angela-lopez-social-media-manager.jpg',
+    'scott-estrada-developer.jpg',
+    'barbara-ramos-graphic-designer.jpg',
+];
+
+
 
 for (let i = 0; i < employers.length; i++) {
     console.log(employers[i]);
     for (let key in employers[i]){
         console.log(employers[i][key]);
         let myTeam = document.getElementById('my-employers');
-        myTeam.innerHTML += `<div> ${employers[i][key]} </div>`;
+        myTeam.innerHTML += `<div> ${employers[i][key]} </div> <div><img src="${imgList[i]}" alt=""></div>`;
         console.log(myTeam);
     }
-}
+};
+
