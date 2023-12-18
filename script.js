@@ -56,7 +56,7 @@ for (let i = 0; i < employers.length; i++) {
     for (let key in employers[i]){
         console.log(employers[i][key]);
         let myTeam = document.getElementById('my-employers');
-        myTeam.innerHTML += employers[i][key];
+        myTeam.innerHTML += `<div> ${employers[i][key]} </div>`;
         console.log(myTeam);
     }
 }
