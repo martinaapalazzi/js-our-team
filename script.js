@@ -53,13 +53,16 @@ const employers = [
 for (let i = 0; i < employers.length; i++) {
     console.log(employers[i]);
     let myTeam = document.getElementById('my-employers');
-        myTeam.innerHTML += `<div class="img_container"><img src="${employers[i]['image']}"></div><div class="description"><h2>${employers[i]['name']}</h2><p>${employers[i]['role']}</p></div>`;
-
-    /*for (let key in employers[i]){
-        console.log(employers[i][key]);
-        let myTeam = document.getElementById('my-employers');
-        myTeam.innerHTML += `<div class="img_container"><img src="${employers[i]['image']}"></div><div class="description"><h2>${employers[i]['name']}</h2><p>${employers[i]['role']}</p></div>`;
-        console.log(myTeam);
-    }*/
+    myTeam.innerHTML += `<div class="cards"><div class="img_container"><img src="${employers[i]['image']}"></div><div class="description"><h2>${employers[i]['name']}</h2><p>${employers[i]['role']}</p></div></div>`;
+    
+/*  
+    for (let key in employers[i]){
+    console.log(employers[i][key]);
+    let myTeam = document.getElementById('my-employers');
+    myTeam.innerHTML += `<div class="img_container"><img src="${employers[i]['image']}"></div><div class="description"><h2>${employers[i]['name']}</h2><p>${employers[i]['role']}</p></div>`;
+    console.log(myTeam);
+    }
+    
+*/
 };
 
